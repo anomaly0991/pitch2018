@@ -1,0 +1,30 @@
+.demoreel {
+  color: white;
+  background-color: #333333;
+}
+
+#profilepic {
+  border-radius: 50%;
+  float: inherit;
+  margin-top: 150px;
+
+}
+
+.profilemaincontent {
+  min-width: 500px;
+
+}
+
+profilecontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.userinfo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body {
+  min-width: 600px;
+}
