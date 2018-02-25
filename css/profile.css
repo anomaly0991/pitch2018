@@ -5,26 +5,97 @@
 
 #profilepic {
   border-radius: 50%;
-  float: inherit;
-  margin-top: 150px;
+  float: left;
+  margin-right: 200px;
+
 
 }
 
 .profilemaincontent {
-  min-width: 500px;
+  max-width: 800px;
+  min-width: 400px;
+  grid-area: main;
 
 }
 
 profilecontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
 
 .userinfo {
-  text-align: center;
+  text-align:left;
   margin-bottom: 30px;
+  max-width: 200px;
+  margin-left: 25px;
+  float:left;
+}
+
+.creatorcomment {
+  max-width: 400px;
+  min-width: 200px;
+  float: right;
+}
+
+.grid {
+  display: grid;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 25px;
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  "item_a item_a"
+  "item_b  item_c"
+  "item_d item_d"
+
+
+}
+
+.grid div:nth-child(even) {
+  background-color: red;
+}
+
+.grid div:nth-child(odd) {
+  background-color: green;
+}
+
+
+.item {
+  display: table-cell;
+  color: red:
+
+}
+.item_a {
+  grid-area: item_a;
+  text-align: center;
+}
+
+.item_b {
+  grid-area: item_b;
+}
+
+.item_c {
+  grid-area: item_c;
+
+}
+
+.item_d {
+  grid-area: item_d;
+
 }
 
 body {
   min-width: 600px;
+}
+
+a {
+  color: black;
 }
