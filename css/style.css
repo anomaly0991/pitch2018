@@ -9,6 +9,11 @@ Website: http://themegret.com
 
 /* Amber Additional .css
 ===============*/
+#home_icon {
+height: 50px;
+
+}
+
 .pitchlogo{
 	height: 200px;
 }
