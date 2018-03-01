@@ -45,7 +45,7 @@ profilecontainer {
 
 .grid {
   display: grid;
-  margin-top: 50px;
+  padding-top: 150px;
   margin-right: 20px;
   margin-left: 25px;
   max-width: 100%;
@@ -123,3 +123,29 @@ a {
     "item_b  item_c item_c item_e"
     "item_d item_d item_d item_e"
   }
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr:
+    grid-row: 1fr 1fr;
+    width: 1000px;
+    grid-template-areas:
+    "pitcharea ad_space"
+  }
+
+.pitcharea {
+  grid-area: pitcharea;
+}
+
+.ad_space {
+  grid-area: ad_space;
+}
+
+.pitchgrid div:nth-child(even) {
+  background-color: red;
+}
+
+.pitchgrid div:nth-child(odd) {
+  background-color: green;
+}
