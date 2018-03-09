@@ -1,3 +1,49 @@
+
+
+/* Profile Grid system */
+.biogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 100%;
+  grid-gap: 10px;
+  grid-template-areas:
+  "item_f item_f item_f"
+  "item_g item_g item_g"
+  "item_h item_h item_h"
+
+}
+
+.item_f {
+  grid-area: item_f;
+  text-align: center;
+}
+
+.item_g {
+  grid-area: item_g;
+  text-align: center;
+  float: center;
+}
+
+.item_h {
+  grid-area: item_h;
+  text-align: center;
+}
+.biogrid div:nth-child(even) {
+  background-color: red;
+}
+
+.biogrid div:nth-child(odd) {
+  background-color: green;
+}
+
+section {
+  padding-top: 100px;
+}
+
+/* End*/
+
+/* Pitchfilm Grid system */
 .demoreel {
   color: white;
   background-color: #333333;
@@ -5,10 +51,7 @@
 
 #profilepic {
   border-radius: 50%;
-  float: left;
-  margin-right: 200px;
-
-
+  float: center;
 }
 
 .profilemaincontent {
@@ -29,12 +72,9 @@ profilecontainer {
 }
 
 .userinfo {
-  text-align:left;
-  margin-top: 150px;
-  margin-bottom: 30px;
-  max-width: 200px;
-  margin-left: 25px;
-  float:left;
+  text-align:center;
+  width: 200px;
+
 }
 
 .creatorcomment {
@@ -46,11 +86,11 @@ profilecontainer {
 .grid {
   display: grid;
   padding-top: 150px;
-  margin-right: 20px;
+  margin-right: 25px;
   margin-left: 25px;
   max-width: 100%;
   text-align: left;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   grid-template-areas:

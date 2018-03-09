@@ -106,6 +106,10 @@ height: 50px;
 	padding-left: 20px;
 }
 
+br {
+	padding-bottom: 20px;
+}
+
 /* Search Bar*/
 
 .flexsearch--wrapper {
@@ -304,6 +308,7 @@ li {
 	list-style: none;
 	font-style: Dosis;
 }
+
 
 /* --------------- Common Classes --------------- */
 .center {
