@@ -26,7 +26,7 @@
  	<!--=== Main Stylesheets ===-->
  	<link rel="stylesheet" href="css/style.css" />
  	<link rel="stylesheet" href="css/responsive.css" />
-
+  <link rel="stylesheet" href="css/profile.css" />
  	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
  	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
 
@@ -70,11 +70,21 @@
  							<ul class="nav navbar-nav navbar-right">
  								<li>
  									<div class="nav-login">
- 										<form class="" action="includes/login.inc.php" method="POST">
- 											<input type="text" name="email" placeholder="e-mail">
- 											<input type="password" name="pwd" placeholder="password">
- 											<button type="submit" name="submit">Login</button>
- 										</form>
+                    <?php
+                      if (isset($_SESSION['u_id'])) {
+                        echo '<form action="includes/logout.inc.php" method="POST">
+                            <button type="submit" name="submit">Logout</button>
+                            </form>';
+                      } else {
+                        echo '<form class="" action="includes/login.inc.php" method="POST">
+                         				<input type="text" name="email" placeholder="e-mail">
+                         				<input type="password" name="pwd" placeholder="password">
+                         				<button type="submit" name="submit">Login</button>
+                         			</form>';
+                      }
+                     ?>
+
+
  								</div>
 
  								</li>

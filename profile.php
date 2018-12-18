@@ -3,6 +3,7 @@ include 'includes/header.inc.php';
 include_once 'includes/dbh.inc.php';
 ?>
 
+
 <section id="step-1">
 
 	<div class="profilegrid">
@@ -11,7 +12,15 @@ include_once 'includes/dbh.inc.php';
 		<div class="item_a">
 
 				<img src="images/client_1.jpg" id="profilepic">
-				<h3>Name</h3> <button type="button" name="button">Hire Me!</button>
+				<h3>
+					<?php
+					if (isset($_SESSION['u_email'])) {
+						echo $_SESSION['u_first'];
+						echo $_SESSION['u_last'];
+					}
+					 ?>
+
+				</h3> <button type="button" name="button">Hire Me!</button>
 				<p>Occupation</p>
 				<p>Years Experience</p>
 				<p>Rate</p>
@@ -68,7 +77,7 @@ include_once 'includes/dbh.inc.php';
   						</ul>
   					</div>
 
-  					<p class="copyright">All rights reserved &copy; 2015</p>
+  					<p class="copyright">All rights reserved &copy; 2019</p>
   				</div>
   			</div>
   		</div>

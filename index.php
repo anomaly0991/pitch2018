@@ -18,7 +18,7 @@ include_once 'includes/dbh.inc.php';
 						<?php
 						if (isset($_SESSION['u_email'])) {
 							echo $_SESSION['u_first'];
-						}
+						} 
 						?>
 						<div class="home-buttons">
 							<a href="pitch_signup.php" class="fancy-button button-line button-white vertical">
