@@ -15,7 +15,10 @@ include_once 'includes/dbh.inc.php';
 
 
 		<div class="item_a">
-
+			<form action="upload.php" method="POST" enctype="multipart/form-data">
+				<input type="file" name="file">
+				<button type="submit" name="submit">UPLOAD</button>
+			</form>
 				<img src="images/client_1.jpg" id="profilepic">
 				<h3>
 					<?php

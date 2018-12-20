@@ -26,6 +26,7 @@
  	<!--=== Main Stylesheets ===-->
  	<link rel="stylesheet" href="css/style.css" />
  	<link rel="stylesheet" href="css/responsive.css" />
+   	<!--=== Page Specific Stylesheets ===-->
   <link rel="stylesheet" href="css/profile.css" />
  	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
  	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
